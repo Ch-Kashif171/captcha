@@ -1,9 +1,9 @@
 <?php
 
-namespace Captcha\Kcaptcha\Http\Controllers;
+namespace Kashif\Kcaptcha\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Captcha\Kcaptcha\CaptchaBuilder;
+use Kashif\Kcaptcha\CaptchaBuilder;
 use Illuminate\Support\Facades\Session;
 
 class CaptchaController extends Controller {
