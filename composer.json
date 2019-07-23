@@ -13,4 +13,5 @@
         "psr-4": {
             "Captcha\\Kcaptcha\\": "src/"
         }
+    }
 }
