@@ -30,7 +30,7 @@ Note: If you do not have Composer yet, you can install it by following the instr
   
   to verify captcha text you need to call verify faceade in controller and pass the text entered by user and it will return ture or false.
   
-    ```php
-      Captcha::verify("captcha text");
-    
-    ```
+   ```php
+     Captcha::verify("captcha text");
+     
+   ```
