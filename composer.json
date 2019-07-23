@@ -1,5 +1,5 @@
 {
-    "name": "Captcha/Kcaptcha",
+    "name": "captcha/kcaptcha",
     "description": "this is easy to use captcha",
     "license": "MIT",
     "authors": [
