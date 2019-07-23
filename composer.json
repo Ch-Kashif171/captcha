@@ -1,7 +1,7 @@
 {
     "name": "ch-kashif/kcaptcha",
     "description": "this is easy to use captcha",
-    "license": "license under MIT",
+    "license": "MIT",
     "authors": [
         {
             "name": "Kashif Sohail",
