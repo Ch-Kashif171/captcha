@@ -11,13 +11,10 @@ class CaptchaController extends Controller {
     public function reloadCaptcha()
     {
         Session::forget('k-captcha');
-
         $builder = new CaptchaBuilder();
         $builder->build();
-
         Session::put("k-captcha",$builder->getPhrase());
-
-        //return response()->json($builder->inline());
+        
         return response()->json($builder->inline());
 
     }
