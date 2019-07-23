@@ -1,5 +1,5 @@
 {
-    "name": "captcha/kcaptcha",
+    "name": "kashif/kcaptcha",
     "description": "this is easy to use captcha",
     "license": "MIT",
     "authors": [
@@ -11,7 +11,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Captcha\\Kcaptcha\\": "src/"
+            "Kashif\\Kcaptcha\\": "src/"
         }
     }
 }

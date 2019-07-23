@@ -1,8 +1,8 @@
 <?php
 
-namespace Captcha\Kcaptcha;
+namespace Kashif\Kcaptcha;
 
-use Captcha\Kcaptcha\CaptchaBuilder;
+use Kashif\Kcaptcha\CaptchaBuilder;
 use Illuminate\Support\Facades\Session;
 
 class Captcha
@@ -25,8 +25,8 @@ class Captcha
         if (strpos($path,'public') !== false){
             $bas_path = str_replace('public','',$path);
         }
-        $img_path = $bas_path.'vendor/captcha/kcaptcha/image/refresh.png';
-        //$img_path = $bas_path.'packages/captcha/kcaptcha/image/refresh.png';
+        $img_path = $bas_path.'vendor/kashif/kcaptcha/image/refresh.png';
+        //$img_path = $bas_path.'packages/kashif/kcaptcha/image/refresh.png';
         $reload_path = url('k-captcha/reload');
 
         return '<div class="k-captcha-script"><img style="padding-left: 20px;" id="k-captcha-image" class="k-captcha-image" src="' . $builder->inline() . '"><span><img class="k-captcha-reload" style="width: 40px; height: 30px; cursor: pointer;padding-bottom: 5px;" src="'.$img_path.'" onclick="reloadCaptcha();"></span>

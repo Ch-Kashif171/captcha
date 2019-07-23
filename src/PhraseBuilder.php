@@ -1,5 +1,5 @@
 <?php
-namespace Captcha\Kcaptcha;
+namespace Kashif\Kcaptcha;
 
 /**
  * Generates random phrase

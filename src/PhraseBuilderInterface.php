@@ -1,6 +1,6 @@
 <?php
 
-namespace Captcha\Kcaptcha;
+namespace Kashif\Kcaptcha;
 /**
  * Interface for the PhraseBuilder
  *

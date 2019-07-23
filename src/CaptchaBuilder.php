@@ -1,9 +1,9 @@
 <?php
 
-namespace Captcha\Kcaptcha;
+namespace Kashif\Kcaptcha;
 
-use Captcha\Kcaptcha\CaptchaBuilderInterface;
-use Captcha\Kcaptcha\PhraseBuilder;
+use Kashif\Kcaptcha\CaptchaBuilderInterface;
+use Kashif\Kcaptcha\PhraseBuilder;
 
 /**
  * Builds a new captcha image

@@ -1,6 +1,6 @@
 <?php
 
-namespace Captcha\Kcaptcha;
+namespace Kashif\Kcaptcha;
 use Illuminate\Support\ServiceProvider;
 
 class CaptchaServiceProvider extends ServiceProvider
