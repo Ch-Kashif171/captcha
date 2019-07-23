@@ -1,9 +1,9 @@
-# K-Captch
+# K-Captcha
 
-K-Captch is a simple easy too use Laravel package.
+K-Captcha is a simple easy to use Laravel package.
 
 # Getting Started
-  installing Laravel Captcha Composer Package
+  installing Captcha Composer Package
 Note: If you do not have Composer yet, you can install it by following the instructions on https://getcomposer.org
 
 # Step 1. Install package
@@ -26,7 +26,7 @@ Note: If you do not have Composer yet, you can install it by following the instr
     <?php echo $captcha; ?>
 
   ```
-  # Verify Captch:
+  # Verify Captcha:
   
   to verify captcha text you need to call verify faceade in controller and pass the text entered by user and it will return ture or false.
   
