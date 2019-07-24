@@ -20,7 +20,7 @@ trait CaptchaRender
         $reload_path = url('k-captcha/reload');
 
         return '<div class="k-captcha-script"><img style="padding-left: 20px;" id="k-captcha-image" class="k-captcha-image" src="' . $builder->inline() . '"><span><img class="k-captcha-reload" style="width: 40px; height: 30px; cursor: pointer;padding-bottom: 5px;" src="'.$img_path.'" onclick="reloadCaptcha();"></span>
-          <br><input type="text" name="k_captcha" class="k-captcha-input"></div>
+          </div>
           <script type="text/javascript">
           function reloadCaptcha() {
               var req = new XMLHttpRequest();
