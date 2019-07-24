@@ -36,7 +36,7 @@ Note: If you do not have Composer yet, you can install it by following the instr
   ```
   # Verify Captcha:
   
-  to verify captcha text you need to call verify facade in controller and pass the text entered by user and it will return ture or false.
+  To verify captcha text you need to call verify facade in controller and pass the text entered by user and it will return ture or false.
   
    ```php
      Captcha::verify("captcha text");
@@ -45,5 +45,5 @@ Note: If you do not have Composer yet, you can install it by following the instr
    A helper function is also available to verify the captcha
    
    ```php
-        captcha_verify("captcha text");
+      captcha_verify("captcha text");
    ```
