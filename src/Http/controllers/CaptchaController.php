@@ -14,7 +14,7 @@ class CaptchaController extends Controller {
         $builder = new CaptchaBuilder();
         $builder->build();
         Session::put("k-captcha",$builder->getPhrase());
-        
+
         return response()->json($builder->inline());
 
     }

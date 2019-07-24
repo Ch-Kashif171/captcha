@@ -12,6 +12,9 @@
     "autoload": {
         "psr-4": {
             "Kashif\\Kcaptcha\\": "src/"
-        }
+        },
+        "files": [
+            "src/helpers.php"
+        ]
     }
 }
