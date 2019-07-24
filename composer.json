@@ -9,6 +9,7 @@
         }
     ],
     "require": {},
+    "minimum-stability":"dev",
     "autoload": {
         "psr-4": {
             "Kashif\\Kcaptcha\\": "src/"
