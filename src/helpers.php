@@ -1,20 +1,20 @@
 <?php
 use Kashif\Kcaptcha\Captcha;
-if (!function_exists('kcaptcha')) {
+if (!function_exists('captcha')) {
     /**
      * @return string
      */
-    function kcaptcha()
+    function captcha()
     {
         return Captcha::render();
     }
 }
-if (!function_exists('verify_kcaptcha')) {
+if (!function_exists('captcha_verify')) {
     /**
      * @param $text
      * @return bool
      */
-    function verify_kcaptcha($text)
+    function captcha_verify($text)
     {
         if (isset($text)){
             return Captcha::verify($text);

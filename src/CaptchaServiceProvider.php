@@ -12,12 +12,21 @@ class CaptchaServiceProvider extends ServiceProvider
     {
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
 
-        Blade::directive('kcaptcha', function ($expression) {
+        Blade::directive('captcha', function ($expression) {
             return Captcha::render();
         });
+        $this->registerHelpers();
     }
     public function register()
     {
+    }
+
+    private function registerHelpers()
+    {
+        if (file_exists($file = __DIR__ .'/helpers.php'))
+        {
+            require $file;
+        }
     }
 
 }

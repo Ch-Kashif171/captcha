@@ -26,9 +26,13 @@ Note: If you do not have Composer yet, you can install it by following the instr
     {!! $captcha !!}
 
   ```
+  If you want to use a helper function to create the captcha use below function.
+  ```php
+    captcha();
+  ```
   Also a directive is available to render captcha in balde view, for this we just need to add below directive into the blade.
   ```php
-    @kcaptcha
+    @captcha
   ```
   # Verify Captcha:
   
@@ -37,4 +41,9 @@ Note: If you do not have Composer yet, you can install it by following the instr
    ```php
      Captcha::verify("captcha text");
      
+   ```
+   A helper function is also available to verify the captcha
+   
+   ```php
+        captcha_verify("captcha text");
    ```
