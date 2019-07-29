@@ -12,7 +12,7 @@
     "minimum-stability":"dev",
     "autoload": {
         "psr-4": {
-            "Kashif\\Kcaptcha\\": "src/"
+            "Kashif\\Captcha\\": "src/"
         },
         "files": [
             "src/helpers.php"

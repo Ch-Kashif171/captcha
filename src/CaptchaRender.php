@@ -1,8 +1,8 @@
 <?php
 
-namespace Kashif\Kcaptcha;
+namespace Kashif\Captcha;
 use Illuminate\Support\Facades\Session;
-use Kashif\Kcaptcha\CaptchaBuilder;
+use Kashif\Captcha\CaptchaBuilder;
 
 trait CaptchaRender
 {

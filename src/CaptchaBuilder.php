@@ -1,17 +1,10 @@
 <?php
 
-namespace Kashif\Kcaptcha;
+namespace Kashif\Captcha;
 
-use Kashif\Kcaptcha\CaptchaBuilderInterface;
-use Kashif\Kcaptcha\PhraseBuilder;
+use Kashif\Captcha\CaptchaBuilderInterface;
+use Kashif\Captcha\PhraseBuilder;
 
-/**
- * Builds a new captcha image
- * Uses the fingerprint parameter, if one is passed, to generate the same image
- *
- * @author Gregwar <g.passault@gmail.com>
- * @author Jeremy Livingston <jeremy.j.livingston@gmail.com>
- */
 class CaptchaBuilder implements CaptchaBuilderInterface
 {
     /**

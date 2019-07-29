@@ -1,5 +1,5 @@
 <?php
-use Kashif\Kcaptcha\Captcha;
+use Kashif\Captcha\Captcha;
 if (!function_exists('captcha')) {
     /**
      * @return string

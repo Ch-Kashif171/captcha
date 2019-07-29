@@ -1,11 +1,6 @@
 <?php
-namespace Kashif\Kcaptcha;
+namespace Kashif\Captcha;
 
-/**
- * Generates random phrase
- *
- * @author Gregwar <g.passault@gmail.com>
- */
 class PhraseBuilder implements PhraseBuilderInterface
 {
     /**

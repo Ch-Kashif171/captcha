@@ -1,10 +1,10 @@
 <?php
 
-namespace Kashif\Kcaptcha;
+namespace Kashif\Captcha;
 
-use Kashif\Kcaptcha\CaptchaBuilder;
+use Kashif\Captcha\CaptchaBuilder;
 use Illuminate\Support\Facades\Session;
-use Kashif\Kcaptcha\CaptchaRender;
+use Kashif\Captcha\CaptchaRender;
 
 class Captcha
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Kashif\Kcaptcha;
+namespace Kashif\Captcha;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Blade;
-use Kashif\Kcaptcha\Captcha;
+use Kashif\Captcha\Captcha;
 
 class CaptchaServiceProvider extends ServiceProvider
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Kashif\Kcaptcha;
+namespace Kashif\Captcha;
 /**
  * A Captcha builder
  */

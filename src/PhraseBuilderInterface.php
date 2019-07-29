@@ -1,11 +1,7 @@
 <?php
 
-namespace Kashif\Kcaptcha;
-/**
- * Interface for the PhraseBuilder
- *
- * @author Gregwar <g.passault@gmail.com>
- */
+namespace Kashif\Captcha;
+
 interface PhraseBuilderInterface
 {
     /**
