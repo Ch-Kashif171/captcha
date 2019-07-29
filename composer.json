@@ -1,5 +1,5 @@
 {
-    "name": "kashif/kcaptcha",
+    "name": "kashif/captcha",
     "description": "This is easy to use captcha package for Laravel",
     "license": "MIT",
     "authors": [
