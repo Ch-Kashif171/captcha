@@ -8,7 +8,7 @@ Note: If you do not have Composer yet, you can install it by following the instr
 
 # Step 1. Install package
   
-    composer require kashif/kcaptcha
+    composer require kashif/captcha
 
 # Step 2. Register the Captcha service provider
   in config/app.php
