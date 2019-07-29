@@ -1,6 +1,6 @@
-# K-Captcha
+# Captcha
 
-K-Captcha is a simple easy to use Laravel package.
+Captcha is a simple easy to use package for Laravel.
 
 # Getting Started
   installing Captcha Composer Package
@@ -14,12 +14,12 @@ Note: If you do not have Composer yet, you can install it by following the instr
   in config/app.php
   add following line
    ```php
-    Kashif\Kcaptcha\CaptchaServiceProvider::class,
+    Kashif\Captcha\CaptchaServiceProvider::class,
    ```
 # Using Captcha:
   In Controller include and call captcha facade and send variable to view and print this variable in view as below
   ```php
-    use Kashif\Kcaptcha\Captcha;
+    use Kashif\Captcha\Captcha;
     $captcha = Captcha::render();
     return view('view',compact('captcha'));
     
