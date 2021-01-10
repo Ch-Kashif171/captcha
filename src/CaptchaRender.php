@@ -12,23 +12,19 @@ trait CaptchaRender
         $builder->build();
 
         Session::put('k-captcha', $builder->getPhrase());
-        $path = url('/');
-        if (strpos($path,'public') !== false){
-            $bas_path = str_replace('public','',$path);
-        }
-        $img_path = $bas_path.'vendor/kashif/captcha/image/refresh.png';
+
+        $img_path = asset('kashif/captcha/image/refresh.png');
         $reload_path = url('k-captcha/reload');
 
         return '<div class="k-captcha-script"><img style="padding-left: 20px;" id="k-captcha-image" class="k-captcha-image" src="' . $builder->inline() . '"><span><img class="k-captcha-reload" style="width: 40px; height: 30px; cursor: pointer;padding-bottom: 5px;" src="'.$img_path.'" onclick="reloadCaptcha();"></span>
           </div>
           <script type="text/javascript">
           function reloadCaptcha() {
-              var req = new XMLHttpRequest();
+              let req = new XMLHttpRequest();
               req.responseType = "json";
               req.open("GET", "'.$reload_path.'", true);
               req.onload  = function() {
-                var jsonResponse = req.response;
-                 document.getElementById("k-captcha-image").src = jsonResponse;
+                 document.getElementById("k-captcha-image").src = req.response;
               };
               req.send(null);    
           }</script>';

@@ -16,9 +16,10 @@ class CaptchaServiceProvider extends ServiceProvider
             return Captcha::render();
         });
         $this->registerHelpers();
-    }
-    public function register()
-    {
+
+        $this->publishes([
+            __DIR__.'/image/refresh.png' => public_path('kashif/captcha/image/refresh.png'),
+        ], 'kashif');
     }
 
     private function registerHelpers()
