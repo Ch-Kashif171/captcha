@@ -3,7 +3,6 @@
 namespace Kashif\Captcha;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Blade;
-use Kashif\Captcha\Captcha;
 
 class CaptchaServiceProvider extends ServiceProvider
 {
@@ -19,14 +18,13 @@ class CaptchaServiceProvider extends ServiceProvider
         Blade::directive('captcha', function ($expression) {
             return Captcha::render();
         });
-        
+
         $this->registerHelpers();
     }
 
     private function registerHelpers()
     {
-        if (file_exists($file = __DIR__ .'/helpers.php'))
-        {
+        if (file_exists($file = __DIR__ .'/helpers.php')) {
             require $file;
         }
     }

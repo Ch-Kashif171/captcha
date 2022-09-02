@@ -1,4 +1,5 @@
 <?php
+namespace Kashif\Captcha;
 
 use Symfony\Component\Finder\Finder;
 
