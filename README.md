@@ -16,6 +16,11 @@ Note: If you do not have Composer yet, you can install it by following the instr
    ```php
     Kashif\Captcha\CaptchaServiceProvider::class,
    ```
+#### Publish Assets
+To publish the assets run the below command.
+```
+ php artisan vendor:publish --tag=kashif
+```
 # Using Captcha:
   In Controller include and call captcha facade and send variable to view and print this variable in view as below
   ```php
