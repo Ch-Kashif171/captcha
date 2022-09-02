@@ -10,11 +10,20 @@ class Captcha
 {
     use CaptchaRender;
 
-    public static function render(){
+    /**
+     * @return string
+     */
+    public static function render(): string
+    {
         return CaptchaRender::getCaptcha();
     }
 
-    public static function verify($captcha){
+    /**
+     * @param $captcha
+     * @return bool
+     */
+    public static function verify($captcha): bool
+    {
        return CaptchaRender::verifyCaptcha($captcha);
     }
 }
